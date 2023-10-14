@@ -1,0 +1,398 @@
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  img {
+    width: 100%;
+  }
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* .introTxt {
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 1%;
+  left: 2em;
+} */
+
+.GoTop{
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  filter: drop-shadow(2px 2px 2px grey);
+}
+
+#main-header {
+  background-color: lightgrey;
+  margin: auto;
+  width: 80%;
+  height: 150px;
+/*   border: 5px solid black; */
+  position: relative;
+}
+
+.main-nav {
+  overflow: hidden;
+}
+
+
+.main-menu {
+  display: grid;
+  grid-template-columns: 8em 8em 8em 8em 8em 8em;
+  padding: 20px;
+  float: right;
+  margin: 2em;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+
+.headerLogo {
+  position: absolute;
+  top: 20%;
+  bottom: 10%;
+  width:20%;
+}
+
+
+.headerLogo img {
+  width: 150%;
+  max-width: 150%;
+  max-height: 100%;
+}
+
+
+
+.p {
+  word-wrap: break-word;
+  text-wrap: wrap;
+  max-width: 100%;
+}
+
+
+p::first-letter {
+  color: #3e8e41;
+  font-size: xx-large;
+}
+
+
+#mainContent {
+  background-color: lightgrey;
+/*   border: 2px solid black; */
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  margin-top:0.2em;
+  text-indent: 10px;
+}
+
+#mainContent p { 
+ text-indent: 50px;
+}
+
+.carouselContent {
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+}
+
+
+.carouselContent h5 {
+  text-align: center;
+  color: white;
+  background: rgba(171, 208, 176, 0.6);
+  padding: 15px;
+  width: 20em;
+  margin: auto;
+}
+
+
+.carouselPic {
+  width: 100%;
+}
+
+
+#aboutMe {
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+}
+
+#aboutMe > h2 {
+  color: #3e8e41;
+  text-align: center;
+}
+
+.actionBut {
+  width: 100%;
+  background-color: grey;
+  height: 8em;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.actBut {
+  color: white;
+}
+
+.knowMore { 
+  border: none;
+  padding: 15px 32px;
+  margin: 4px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #302f2b;
+  box-shadow: 2px 2px 2px 2px #aba89f;
+}
+
+
+ .knowMore:hover {
+  background-color: #3e8e41;
+}
+
+ .knowMore:active {
+  background-color: #3e8e41;
+  box-shadow: 2px 2px 2px 2px #666;
+  transform: translateY(4px);
+}
+
+#mySkills {
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+}
+
+#mySkills > h2 {
+  color: #3e8e41;
+  text-align: center;
+}
+
+
+.HardeepSkillsPic{
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+
+#myPortfolio {
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+}
+
+#myPortfolio > h2 {
+  color: #3e8e41;
+  text-align: center;
+}
+
+
+.FlexboxPortfolio {
+  border: 1px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0.8rem;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-direction: row;
+/*   align-items: stretch; */
+}
+
+.flex-Item {
+  color: black;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  text-align: center;
+/*   width: 280px;
+  height: 300px; */
+  flex: 1 1 30%;
+/*   flex-grow: 1; */
+}
+
+
+.item-1 {
+  background-color: grey;
+/*   align-items: stretch; */
+}
+
+.item-2 {
+  background-color: lightgrey;
+}
+
+.item-3 {
+  background-color: grey;
+}
+
+.item-4 {
+  background-color: lightgrey;
+}
+
+.item-5 {
+  background-color: grey;
+}
+
+.item-6 {
+  background-color: lightgrey;
+}
+
+.item-7 {
+  background-color: grey;
+}
+
+.item-8 {
+  background-color: lightgrey;
+}
+
+.item-9 {
+  background-color: grey;
+}
+
+
+#contactMe {
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+}
+
+
+#contactMe > h2 {
+  color: #3e8e41;
+  text-align: center;
+}
+
+.ContactForm {
+  text-align: center;
+}
+
+.formSubmit{
+  border: none;
+  padding: 15px 32px;
+  margin: 4px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #302f2b;
+  box-shadow: 0 9px #aba89f; 
+}
+
+
+.formSubmit:hover {
+  background-color: #3e8e41
+}
+
+
+ .formSubmit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+#myBlog {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 5px;
+}
+
+
+.content4 {
+  background-color: white;
+  padding: 20px;
+}
+
+.content4 > h2 {
+  color: #3e8e41;
+  text-align: center;
+}
+
+
+.content5 {
+  background-color: white;
+  padding: 20px;
+  height: 250px;
+  position: relative;
+}
+
+
+.mainfooter {
+  background-color: lightgrey;
+  border: 2px solid black;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top:0.2em;
+}
+
+
+.homepic {
+  object-fit: cover;
+  position: absolute;
+  top: 6%;
+  bottom: 6%;
+  right: 2%;
+  left: 2%;
+  width: 96%;
+  max-width: 100%;
+  max-height: 90%;
+}
+
+
+/* img {
+  width: 96%;
+  max-width: 100%;
+  max-height: 90%;
+} */
+
+
+
+.footer {
+  background-color: lightgrey;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+  padding: 3em;
+}
+
+   .footer img {
+    margin-left: 30px;
+    width: 2%;  
+}
