@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="icon" type="image/x-icon" href="media/creaKalaFavicon.jpeg"> -->
     <link rel="icon" type="image/jpg" sizes="64x64" href="media/creaKalaFavicon.jpeg">
+<<<<<<< Updated upstream
+=======
+
+    <!-- <script>
+      let d = new Date();
+      alert("Today's date is " + d);
+      alert("This is my internal file alert message!");
+    </script> -->
+
+>>>>>>> Stashed changes
   </head>
 
   
@@ -29,20 +39,52 @@
         <nav class="main-nav">
           <ul class="main-menu">
             <li class="in-menu"><a class="active" href="#home">Home</a></li>
-            <li class="in-menu"><a href="#aboutMe">About</a></li>
-            <li class="in-menu"><a href="#mySkills">Skills</a></li>
-            <li class="in-menu"><a href="#myPortfolio">Portfolio</a></li>
-            <li class="in-menu"><a href="#contactMe">Contact</a></li>            
+            <li class="in-menu"><a href=".aboutMe">About</a></li>
+            <li class="in-menu"><a href=".mySkills">Skills</a></li>
+            <li class="in-menu"><a href=".myPortfolio">Portfolio</a></li>
+            <li class="in-menu"><a href=".contactMe">Contact</a></li>            
             <li class="in-menu"><a href="HkkBlog.html">My Blog</a></li>
           </ul>
         </nav>
 
+<<<<<<< Updated upstream
         <div class="headerLogo"><img src="media/creaKalaLogo.jpg" alt="Mylogo"></div>
     
+=======
+        <div class="headerLogo"><img src="media/creaKalaLogo.jpg" alt="Mylogo"></div>   
+
+
+        <div id="contactModal">
+        <section class="modal hidden">
+          <div class="flex">
+            <button class="btn-close">⨉</button>
+          </div>
+          <div id="RequestQuote">
+            <h3>Request for a quote!</h3>  
+          </div>
+          <form action="action_page.php" class="contactModal" target="_blank" method="post">
+          <input type="name" id="nameModal" placeholder="Your name" /> <br>
+          <input type="email" id="emailModal" placeholder="Your email ID" /><br>
+          <input type="message" id="messageModal" placeholder="Your message" /><br>
+          <button class="btn">Submit</button>
+          </form>
+        </section>
+        
+        <div class="overlay hidden"></div>
+        <button class="btn btn-open">Request for a quote</button>
+        </div>
+        
+
+        
+>>>>>>> Stashed changes
   </header>
    
  
   <main id="mainContent">
+
+    <div class="container">
+
+    <div class="anim">
     <div class="carouselContent">
  
   <div id="carouselExampleCaptions" class="carousel slide">
@@ -84,16 +126,26 @@
       <div class="GoTop"><a href="#main-header"><img src="media/up-arrow.png" alt="Go to Top" width="50em"></a></div>
 
     </div>
+    </div>
     
-    
-    <div id="aboutMe">
+   
+
+    <div class="anim aboutMe left">
+      <div class="anim_content">
       <h2>This section is for About Me</h2>
       
       <p>
+<<<<<<< Updated upstream
         <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
       </p>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+=======
+        <strong>Detail oriented and creative Graphic/Web Designer with a 10+ years of experience</strong> in designing graphics for print/web/
+multimedia and 5 years of experience in developing websites. I seek to deliver immersive, intuitive design solutions providing
+positive user experience thus increasing viewership by 90%. 15+ years’ experience in customer service, demonstrate courtesy,
+empathy, and professionalism in gathering information from clients to establish the precise nature of their enquiry
+>>>>>>> Stashed changes
       </p><br>
       <div class="actionBut">
         <h3 class="actBut">Want to know more about my educational and professional progression?</h3>
@@ -104,10 +156,12 @@
       <div class="GoTop"><a href="#main-header"><img src="media/up-arrow.png" alt="Go to Top" width="50em"></a></div>
 
     </div>
+    </div>
     
    
     
-    <div id="mySkills">
+    <div class="anim mySkills right">
+      <div class="anim_content">
       <h2>This section is for My Skills</h2>
       <p>
         <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</strong>
@@ -118,9 +172,11 @@
       <div class="GoTop"><a href="#main-header"><img src="media/up-arrow.png" alt="Go to Top" width="50em"></a></div>
 
     </div>
+    </div>
     
     
-    <div id="myPortfolio">
+    <div class="anim myPortfolio left">
+      <div class="anim_content">
       <h2>This section is for My Portfolio</h2>
       
       <div class="FlexboxPortfolio">
@@ -160,9 +216,11 @@
       <div class="GoTop"><a href="#main-header"><img src="media/up-arrow.png" alt="Go to Top" width="50em"></a></div>
 
     </div>
+    </div>
     
-    
-    <div id="contactMe">
+
+    <div class="anim contactMeform right">
+      <div class="anim_content">
       <h2>Get in touch!</h2>
           <form action="/example_action.html" class="ContactForm" target="_blank" method="post">
             <div>
@@ -177,15 +235,23 @@
               <label for="message">Message</label><br>
               <input type="text" id="message" name="ContactMe"><br><br>
               <input type="submit" class="formSubmit" value="Submit">
+<<<<<<< Updated upstream
             </div>
       </form><br><br> 
+=======
+
+            
+            </form><br><br> 
+>>>>>>> Stashed changes
 
       <div class="GoTop"><a href="#main-header"><img src="media/up-arrow.png" alt="Go to Top" width="50em"></a></div>
-
+    </div>
     </div>
     
     
-    <div id="myBlog">
+
+    <div class="anim myBlog left">
+      <div class="anim_content">
         <div class="content4">
           <h2>Check my Blog for more info!</h2>
           <p>
@@ -197,6 +263,7 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
           </p>
         </div>
+      
 
 
         <div class="content5">
@@ -204,12 +271,15 @@
             <img src="https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80" class="homepic" width="300px" alt="clouds">
           </p>
         </div>
-    </div> 
 
     <div class="GoTop"><a href="#main-header"><img src="media/up-arrow.png" alt="Go to Top" width="50em"></a></div>
+    </div>
+    </div> 
+  </div>
 
   </main>
   
+
   
   <footer>
       <div class="footer">

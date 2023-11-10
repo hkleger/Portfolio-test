@@ -103,9 +103,163 @@ p::first-letter {
   font-size: xx-large;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Contact modal starts here */
+
+
+#contactModal {
+  display: inline-flexbox;
+  flex-direction: inherit;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  position: relative;
+  min-height: 50vh;
+  z-index: 2;
+}
+
+
+#RequestQuote h3{
+  text-align: center;
+}
+
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 450px;
+  padding: 1.3rem;
+  min-height: 250px;
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.modal p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0 0.2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background-color: #1b6f1e;
+  color: white;
+}
+
+
+.btn-open {
+  position: absolute;
+  bottom: 150px;
+}
+
+.btn-close {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+}
+
+
+
+.contactModal{
+  display: inline-block;
+  text-align: center;
+}
+
+#nameModal {
+  width: 90%;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+#emailModal {
+  width: 90%;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+#messageModal {
+  width: 90%;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.modal {
+  z-index: 3;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+
+/* Contact modal ends here */
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+>>>>>>> Stashed changes
 
 #mainContent {
-  background-color: lightgrey;
+  background-color:rgb(245, 245, 245);
 /*   border: 2px solid black; */
   padding: 20px;
   width: 80%;
@@ -140,13 +294,55 @@ p::first-letter {
 }
 
 
-#aboutMe {
+
+.anim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+
+.anim:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.3s;
+}
+
+.anim_content {
+  background-color: rgb(237, 237, 237)7);
+  text-align: center;
+  padding: 2rem;
+  /* border-radius: 7px; */
+}
+
+
+.left {
+  transform-origin: left center;
+  transform: translateX(-50%);
+}
+
+
+.right {
+  transform-origin: right center;
+  transform: translateX(50%);
+}
+
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
+
+
+.aboutMe {
   background-color: white;
   padding: 20px;
   margin: 15px;
 }
 
-#aboutMe > h2 {
+.aboutMe > h2 {
   color: #4c5843;
   text-align: center;
 }
@@ -188,13 +384,14 @@ p::first-letter {
   transform: translateY(4px);
 }
 
-#mySkills {
+.mySkills {
   background-color: white;
   padding: 20px;
   margin: 15px;
+  text-align: center;
 }
 
-#mySkills > h2 {
+.mySkills > h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -207,13 +404,15 @@ p::first-letter {
 }
 
 
-#myPortfolio {
+.myPortfolio {
   background-color: white;
   padding: 20px;
   margin: 15px;
+  text-align: center;
 }
 
-#myPortfolio > h2 {
+
+.myPortfolio > h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -282,14 +481,24 @@ p::first-letter {
 }
 
 
+<<<<<<< Updated upstream
 #contactMe {
   background-color: white;
+=======
+.contactMeform {
+  display: block;
+  background-color: rgb(244, 244, 244);
+  padding: 50px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+>>>>>>> Stashed changes
   padding: 20px;
   margin: 15px;
 }
 
 
-#contactMe > h2 {
+.contactMeform > h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -325,10 +534,46 @@ p::first-letter {
 }
 
 
+<<<<<<< Updated upstream
 #myBlog {
   display: grid;
+=======
+
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #338237;
+}
+
+
+
+.myBlog {
+  /* display: grid; 
+>>>>>>> Stashed changes
   grid-template-columns: 60% 40%;
-  gap: 5px;
+  gap: 5px; */
+  background-color: #0a8d5d;
+  padding-top: 3vh;
 }
 
 
