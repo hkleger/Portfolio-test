@@ -1,7 +1,7 @@
 
-let d = new Date();
-      alert("Today's date is " + d);
-      alert("This is my internal file alert message!");
+// let d = new Date();
+//       alert("Today's date is " + d);
+//       alert("This is my internal file alert message!");
 
 
 
