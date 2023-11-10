@@ -117,6 +117,12 @@ p::first-letter {
   z-index: 2;
 }
 
+
+#RequestQuote h3{
+  text-align: center;
+}
+
+
 .modal {
   display: flex;
   flex-direction: column;
@@ -169,6 +175,12 @@ button {
   font-size: 1em;
 }
 
+.btn:hover {
+  background-color: #1b6f1e;
+  color: white;
+}
+
+
 .btn-open {
   position: absolute;
   bottom: 150px;
@@ -180,6 +192,36 @@ button {
   background: #eee;
   border-radius: 50%;
 }
+
+
+
+.contactModal{
+  display: inline-block;
+  text-align: center;
+}
+
+#nameModal {
+  width: 90%;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+#emailModal {
+  width: 90%;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+#messageModal {
+  width: 90%;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+
 
 .overlay {
   position: fixed;
@@ -420,7 +462,7 @@ button {
 
 
 .formSubmit:hover {
-  background-color: #1b6f1e
+  background-color: #1b6f1e;
 }
 
 

@@ -52,23 +52,23 @@
           <div class="flex">
             <button class="btn-close">⨉</button>
           </div>
-          <div>
-            <h3>Stay in touch</h3>
-            <p>
-              This is a dummy newsletter form so don't bother trying to test it. Not
-              that I expect you to, anyways. :)
-            </p>
+          <div id="RequestQuote">
+            <h3>Request for a quote!</h3>  
           </div>
-        
-          <input type="email" id="email" placeholder="brendaneich@js.com" />
-          <button class="btn">Do Something</button>
+          <form action="action_page.php" class="contactModal" target="_blank" method="post">
+          <input type="name" id="nameModal" placeholder="Your name" /> <br>
+          <input type="email" id="emailModal" placeholder="Your email ID" /><br>
+          <input type="message" id="messageModal" placeholder="Your message" /><br>
+          <button class="btn">Submit</button>
+          </form>
         </section>
         
         <div class="overlay hidden"></div>
-        <button class="btn btn-open">Open Modal</button>
+        <button class="btn btn-open">Request for a quote</button>
         </div>
         
         
+
         
         
   </header>
