@@ -103,8 +103,6 @@ p::first-letter {
   font-size: xx-large;
 }
 
-<<<<<<< Updated upstream
-=======
 /* Contact modal starts here */
 
 
@@ -256,7 +254,6 @@ button {
   margin: 0 auto;
 }
 
->>>>>>> Stashed changes
 
 #mainContent {
   background-color:rgb(245, 245, 245);
@@ -481,10 +478,6 @@ button {
 }
 
 
-<<<<<<< Updated upstream
-#contactMe {
-  background-color: white;
-=======
 .contactMeform {
   display: block;
   background-color: rgb(244, 244, 244);
@@ -492,7 +485,6 @@ button {
   margin: auto;
   border-radius: 5px;
   background-color: #f2f2f2;
->>>>>>> Stashed changes
   padding: 20px;
   margin: 15px;
 }
@@ -534,10 +526,6 @@ button {
 }
 
 
-<<<<<<< Updated upstream
-#myBlog {
-  display: grid;
-=======
 
 input[type=text], select, textarea {
   width: 80%;
@@ -569,7 +557,6 @@ input[type=submit]:hover {
 
 .myBlog {
   /* display: grid; 
->>>>>>> Stashed changes
   grid-template-columns: 60% 40%;
   gap: 5px; */
   background-color: #0a8d5d;
