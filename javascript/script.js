@@ -1,9 +1,41 @@
-
 // let d = new Date();
 //       alert("Today's date is " + d);
 //       alert("This is my internal file alert message!");
 
 
+
+
+// Fade and slide
+const items = document.querySelectorAll('.anim:not(:first-child)');
+
+
+const options = {
+  threshold: 0.5
+}
+
+
+function addSlideIn(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('slide-in');
+    } else { // this else part is not compulsory
+      entry.target.classList.remove('slide-in');
+    }
+  });
+}
+
+
+const observer = new IntersectionObserver(addSlideIn, options)
+
+
+items.forEach(anim => {
+  observer.observe(anim);
+})
+
+
+
+
+//request quote modal
 
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
@@ -53,3 +85,5 @@ function sendEmail(){
   }).then(
     message => alert("Message sent successfully!"));
 }
+
+

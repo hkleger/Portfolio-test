@@ -249,9 +249,14 @@ button {
 
 /* Contact modal ends here */
 
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 
 #mainContent {
-  background-color: lightgrey;
+  background-color:rgb(245, 245, 245);
 /*   border: 2px solid black; */
   padding: 20px;
   width: 80%;
@@ -286,13 +291,55 @@ button {
 }
 
 
-#aboutMe {
+
+.anim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+
+.anim:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.3s;
+}
+
+.anim_content {
+  background-color: rgb(237, 237, 237)7);
+  text-align: center;
+  padding: 2rem;
+  /* border-radius: 7px; */
+}
+
+
+.left {
+  transform-origin: left center;
+  transform: translateX(-50%);
+}
+
+
+.right {
+  transform-origin: right center;
+  transform: translateX(50%);
+}
+
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
+
+
+.aboutMe {
   background-color: white;
   padding: 20px;
   margin: 15px;
 }
 
-#aboutMe > h2 {
+.aboutMe > h2 {
   color: #4c5843;
   text-align: center;
 }
@@ -334,13 +381,14 @@ button {
   transform: translateY(4px);
 }
 
-#mySkills {
+.mySkills {
   background-color: white;
   padding: 20px;
   margin: 15px;
+  text-align: center;
 }
 
-#mySkills > h2 {
+.mySkills > h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -353,13 +401,15 @@ button {
 }
 
 
-#myPortfolio {
+.myPortfolio {
   background-color: white;
   padding: 20px;
   margin: 15px;
+  text-align: center;
 }
 
-#myPortfolio > h2 {
+
+.myPortfolio > h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -428,23 +478,26 @@ button {
 }
 
 
-#contactMe {
+.contactMeform {
+  display: block;
   background-color: rgb(244, 244, 244);
-  padding: 25px;
-  margin: 20px;
+  padding: 50px;
+  margin: auto;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  text-align: center;
+  margin: 15px;
 }
 
 
-#contactMe > h2 {
+.contactMeform > h2 {
   color: #3e8e41;
   text-align: center;
 }
 
-
+.ContactForm {
+  text-align: center;
+}
 
 .formSubmit{
   border: none;
@@ -457,17 +510,17 @@ button {
   cursor: pointer;
   color: white;
   background-color: #302f2b;
-  box-shadow: 0 4px #aba89f; 
+  box-shadow: 0 9px #aba89f; 
 }
 
 
 .formSubmit:hover {
-  background-color: #1b6f1e;
+  background-color: #3e8e41
 }
 
 
  .formSubmit:active {
-  background-color: #0acc11;
+  background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -502,10 +555,12 @@ input[type=submit]:hover {
 
 
 
-#myBlog {
-  display: grid;
+.myBlog {
+  /* display: grid; 
   grid-template-columns: 60% 40%;
-  gap: 5px;
+  gap: 5px; */
+  background-color: #0a8d5d;
+  padding-top: 3vh;
 }
 
 
@@ -526,7 +581,6 @@ input[type=submit]:hover {
   height: 250px;
   position: relative;
 }
-
 
 
 .mainfooter {
@@ -574,7 +628,3 @@ input[type=submit]:hover {
     margin-left: 30px;
     width: 2%;  
 }
-
-
-
-
