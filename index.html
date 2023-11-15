@@ -168,7 +168,7 @@ empathy, and professionalism in gathering information from clients to establish 
         <div class="flex-Item item-1">
           <img src="media/HKCalculator.png" width="270px" alt="HKCalculator"><br>Calculator in JavaScript
           <p class="portfolioInfo">This is the discription of my project which I have done over the years.</p>
-          <a href="https://github.com/hkleger/HKCalculator.git">See the JavaScript Calculator</a>
+          <a href="https://github.com/hkleger/HKCalculator.git">See the JavaScript Calculator on Github</a>
         </div>
         <div class="flex-Item item-2">
           <img src="media/WebsiteEx1.jpg" width="270px" alt="WebsiteEx1"><br>Website Development
@@ -209,17 +209,18 @@ empathy, and professionalism in gathering information from clients to establish 
       <h2>Get in touch!</h2>
           <form action="/example_action.html" class="ContactForm" target="_blank" method="post">
               <label for="fname">First Name</label><br>
-              <input type="text" id="fname" name="ContactMe"> <br><br>  
+              <input type="text" id="fname" name="ContactMe" required> <br><br>  
               <label for="lname">Last Name</label><br>
-              <input type="text" id="lname" name="ContactMe"><br><br>
+              <input type="text" id="lname" name="ContactMe" required><br><br>
               <label for="email">Email ID</label><br>
-              <input type="text" id="email" name="ContactMe"><br><br>
+              <input type="text" id="email" name="ContactMe" required pattern ="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br><br>
               <label for="mobile">Mobile</label><br>
-              <input type="text" id="mobile" name="ContactMe"><br><br>
+              <input type="text" id="mobile" name="ContactMe" required pattern ="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
               <label for="message">Message</label><br>
-              <input type="text" id="message" name="ContactMe"><br><br>
+              <textarea id="message" rows="5" cols="50" maxlength="50" required>Enter text here...</textarea><br><br>  
               <input type="submit" class="formSubmit" value="Submit">
             </form><br><br> 
+            
 
       <div class="GoTop"><a href="#main-header"><img src="media/up-arrow.png" alt="Go to Top" width="50em"></a></div>
     </div>
