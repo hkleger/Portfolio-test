@@ -4,7 +4,6 @@
 
 
 
-
 // Fade and slide
 const items = document.querySelectorAll('.anim:not(:first-child)');
 
