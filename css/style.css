@@ -266,7 +266,7 @@ button {
 }
 
 #mainContent p { 
- text-indent: 50px;
+ text-indent: 10px;
 }
 
 .carouselContent {
@@ -480,18 +480,23 @@ button {
 
 .portfolioInfo{
   text-align: left;
-  word-wrap: break-word;
-  text-wrap: wrap;
   max-width: 100%;
   font-size: 0.8em;
+  text-indent: 5px;
 }
 
-.portfolioInfo::first-letter{
+.portfolioInfo::first-letter {
   color: #111;
   font-size: medium;
 }
 
-;
+
+a {
+  color:#071812; 
+  font-weight: bold;
+}
+
+
 .contactMeform {
   display: block;
   background-color: rgb(244, 244, 244);
