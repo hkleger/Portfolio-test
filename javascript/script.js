@@ -69,6 +69,7 @@ openModalBtn.addEventListener("click", openModal);
 
 
 
+
 function sendEmail(){
   Email.send({
       Host : "smtp.elasticemail.com",
@@ -86,3 +87,6 @@ function sendEmail(){
 }
 
 
+function myFunction() {
+  document.getElementById("formSubmit").disabled = true;
+}

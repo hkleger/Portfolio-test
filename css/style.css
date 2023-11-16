@@ -518,7 +518,7 @@ a {
   text-align: center;
 }
 
-.formSubmit{
+#formSubmit{
   border: none;
   padding: 15px 32px;
   margin: 4px 2px;
@@ -528,17 +528,17 @@ a {
   font-size: 16px;
   cursor: pointer;
   color: white;
-  background-color: #302f2b;
+  background-color: #266a14;
   box-shadow: 0 9px #aba89f; 
 }
 
 
-.formSubmit:hover {
-  background-color: #3e8e41
+#formSubmit:hover {
+  background-color: #5e961b
 }
 
 
- .formSubmit:active {
+ #formSubmit:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
