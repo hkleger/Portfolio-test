@@ -205,6 +205,9 @@ empathy, and professionalism in gathering information from clients to establish 
     
 
     <div class="anim contactMeform right">
+      
+      <!-- <div id="form-submitted-msg">Form successfully submitted!</div> -->
+
       <div class="anim_content">
       <h2>Get in touch!</h2>
           <form action="/example_action.html" class="ContactForm" target="_blank" method="post">
@@ -215,10 +218,10 @@ empathy, and professionalism in gathering information from clients to establish 
               <label for="email">Email ID</label><br>
               <input type="text" id="email" name="ContactMe" required pattern ="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br><br>
               <label for="mobile">Mobile</label><br>
-              <input type="text" id="mobile" name="ContactMe" required pattern ="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+              <input type="tel" id="mobile" name="ContactMe" required pattern ="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
               <label for="message">Message</label><br>
               <textarea id="message" rows="5" cols="50" maxlength="50" required>Enter text here...</textarea><br><br>  
-              <input type="submit" class="formSubmit" value="Submit">
+              <input type="submit" id="formSubmit" value="Submit">
             </form><br><br> 
             
 
