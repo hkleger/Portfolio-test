@@ -93,9 +93,10 @@ li a:hover {
 
 .p {
   word-wrap: break-word;
-  text-wrap: wrap;
+  /* text-wrap: wrap; */
   max-width: 100%;
 }
+
 
 
 p::first-letter {
@@ -317,13 +318,13 @@ button {
 
 .left {
   transform-origin: left center;
-  transform: translateX(-50%);
+  transform: translateX(-40%);
 }
 
 
 .right {
   transform-origin: right center;
-  transform: translateX(50%);
+  transform: translateX(40%);
 }
 
 
@@ -404,8 +405,8 @@ button {
 
 .myPortfolio {
   background-color: white;
-  padding: 20px;
-  margin: 15px;
+  /* padding: 20px; */
+  /* margin: 15px; */
   text-align: center;
 }
 
@@ -577,68 +578,6 @@ a {
 .error-msg {
   display: none;
 }
-
-
-
-
-
-/* .ContactForm {
-  text-align: center;
-} */
-
-/* #formSubmit{
-  border: none;
-  padding: 15px 32px;
-  margin: 4px 2px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  color: white;
-  background-color: #266a14;
-  box-shadow: 0 9px #aba89f; 
-} */
-
-
-/* #formSubmit:hover {
-  background-color: #5e961b
-} */
-
-/* 
- #formSubmit:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-} */
-
-
-
-/* input[type=text], select, textarea {
-  width: 80%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-} */
-
-
-
-/* input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #338237;
-} */
 
 
 
