@@ -211,6 +211,69 @@ form.addEventListener('submit', (e) => handleSubmit(e))
 
 
 
+//googleMap
+
+function initMap() {
+            
+  const coordinates = { lat: 51.125690, lng: -114.248817 };
+ 
+  const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 13,
+      center: coordinates,
+  });
+ 
+const marker = new google.maps.Marker({
+     position: coordinates,
+     map: map,
+ });
+
+ const circle = new google.maps.Circle({
+          strokeColor: "blue",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "#FFF",
+          fillOpacity: 0.5,
+          map,
+          center: coordinates,
+          radius: 600,
+  });
+
+  window.initMap = initMap;
+
+
+  let geocoder;
+ 
+  function initMap() {
+      geocoder = new google.maps.Geocoder();
+      const coordinates = { lat: 51.125690, lng: -114.248817 };
+
+      map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 13,
+          center: coordinates,
+      });
+      
+  }
+
+
+
+
+  function getCoordinates() {
+    let address = document.getElementById('address').value;
+    geocoder.geocode({ 'address': address }, function (results, status) {
+        if (status == 'OK') {
+            map.setCenter(results[0].geometry.location);
+            let marker = new google.maps.Marker({
+                map: map,
+                position: results[0].geometry.location
+            });
+        } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+        }
+    });
+  }
+
+}
+
 
 
 
