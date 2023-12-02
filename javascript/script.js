@@ -280,12 +280,6 @@ const marker = new google.maps.Marker({
 
 
 
-
-
-
-
-
-
 // function sendEmail(){
 //   Email.send({
 //       Host : "smtp.elasticemail.com",
