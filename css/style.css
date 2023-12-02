@@ -341,7 +341,7 @@ button {
   margin: 15px;
 }
 
-.aboutMe > h2 {
+.aboutMe  h2 {
   color: #4c5843;
   text-align: center;
 }
@@ -390,7 +390,7 @@ button {
   text-align: center;
 }
 
-.mySkills > h2 {
+.mySkills  h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -411,7 +411,7 @@ button {
 }
 
 
-.myPortfolio > h2 {
+.myPortfolio  h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -592,7 +592,7 @@ a {
   padding: 20px;
 }
 
-.content4 > h2 {
+.content4  h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -629,6 +629,15 @@ a {
   max-height: 90%;
 }
 
+.MyMap{
+  text-align: center;
+  padding: 10px;
+}
+
+.MyMap h2 {
+  color: #3e8e41;
+  text-align: center;
+}
 
 #map{
   width: 900px;
